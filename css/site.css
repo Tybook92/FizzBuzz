@@ -70,15 +70,15 @@ footer .social>a:hover{
 }
 
 .Fizz{
-    color:darkgreen;
+    color:blue;
 }
 
 .Buzz{
-    color:darkblue;
+    color:yellow;
 }
 
 .FizzBuzz{
-    color: darkgoldenrod;
+    color: darkgreen;
     font-weight: bold;
 }
 
