@@ -23,7 +23,7 @@
     <!--Nav Section-->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Hundo</a>
+        <a class="navbar-brand" href="#">FizzBuzz</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,28 +55,28 @@
             <div class="col col-lg-4 border-end border-2">
                 <h1>HUNDO: A Coding Project</h1>
                 <h4 class="lead">
-                    Live life one loop at a time. A Javascript coding exercise using loops. Write a program that displays the numbers from 0 to 100. Display the even numbers in bold
+                    When it counts you Fizz Buzz. A javascript coding exercise using loops. Write a program that prints the numbers from 1 to 100 and for multiples of '3' display <strong>"FIZZ"</strong> instead of the number and for multiples of '5' display <strong>"BUZZ"</strong>. If a multiple of both display <strong>"FizzBuzz"</strong>.
                 </h4>
                 <h2 class="mt-5 border-bottom border-2">Instructions</h2>
-                <p>Enter a starting value and a ending value. Press the button and the values will appear.</p>
+                <p>Enter a fizz and a buzz value. Press the button and the values will appear.</p>
             </div>
             <div class="col col-lg-8">
                 <div>
                     <h5>Enter Values</h5>
                     <form class="row gy-2 gx-3">
                         <div class="col">
-                            <input id="startValue" type="number" class="form-control" placeholder="Start Value" value="0" aria-label="Start Value">
+                            <input id="fizzValue" type="number" class="form-control" placeholder="Fizz Value" value="3" aria-label="Fizz Value">
                         </div>
                         <div class="col">
-                            <input id="endValue" type="number" class="form-control" placeholder="End Value" value="100" aria-label="End Value">
+                            <input id="buzzValue" type="number" class="form-control" placeholder="Buzz Value" value="5" aria-label="Buzz Value">
                         </div>
                         <div class="col-12 d-flex justify-content-end">
-                            <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Display the Hundo</button>
+                            <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Buzz it</button>
                         </div>
                     </form>
                     <h2 class="mt-5 border-bottom border-2">Results</h2>
                     <div class="table-responsive">
-                        <table class="table taable-striped table-sm">
+                        <table class="table table-striped table-sm">
                             <tbody id="results">
                                 <!--Results Go Here-->
                             </tbody>
@@ -106,13 +106,25 @@
         </div>
     </div>
 </footer>
+
+<template id="fbTemplate">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</template>
+
+
  <!-- Bootstrap JS -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
 </script>
 <script src="js/site.js"></script>
 <script>
-    document.getElementById("btnSubmit").addEventListener("click",getValues)
+    document.getElementById("btnSubmit").addEventListener("click",getValues);
 </script>
 </body>
 
